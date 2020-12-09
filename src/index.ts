@@ -59,7 +59,7 @@ export async function login({ url, cookies }: SteamOpenIdLoginOptions): Promise<
             throw e;
         }
 
-        if (redirectedToSteam(e.response?.request.url.host)) {
+        if (!redirectedToSteam(e.response?.request.url.host)) {
             throw new Error('Was not redirected to steam, make sure the url is correct.');
         }
 
