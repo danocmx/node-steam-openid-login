@@ -14,6 +14,10 @@ export type SteamOpenIdLoginOptions = {
     cookies: string[];
 }
 
+/**
+ * A simple login function to get cookies for target openid website.
+ * @return Returns cookies from steam and said openid website we logged into.
+ */
 export async function login({ url, cookies }: SteamOpenIdLoginOptions): Promise<string[]> {
     try {
         const cookiesArray = [...cookies]; // Cloned
