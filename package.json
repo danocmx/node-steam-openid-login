@@ -2,7 +2,7 @@
   "name": "steam-openid-login",
   "version": "1.0.0",
   "description": "Sign in to websites with Steam OpenID",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "tsc"
   },
