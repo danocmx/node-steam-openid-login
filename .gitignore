@@ -62,3 +62,6 @@ typings/
 
 # Local testing environment
 local/
+
+# TSC BUILD
+dist/
